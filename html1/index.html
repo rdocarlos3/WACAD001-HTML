@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF">
-    <title>Primeira Página</title>
+    <meta charset="UTF-8">
+    <title>Exercícico I WACAD001-HTML</title>
     <style></style>
 </head>
 
 <body>
-    <h1>Hitótia do HTML</h1>
-    <p><strong style="border: black;">Tim Berners-Lee</strong>(físico britânico) criou o HTML original(e outros protocolos associados como o
-        HTML), numa<strong>estação de trabalho</strong>, usando o ambiente de desennvolvimento NeXTSTEP do CERN. A sua
+    <!--Exercício I curso Web Academic - introduaçao a html-->
+    <h1>Hitória do HTML</h1>
+    <p><strong>Tim Berners-Lee</strong> (físico britânico) criou o HTML original(e outros protocolos associados como o
+        HTML), numa <strong>estação de trabalho</strong>, usando o ambiente de desenvolvimento NeXTSTEP do CERN. A sua
         soluçao, combina com a entao emergente internet pública (que torna-se-ia a Internet), ganhou atenção mundial
     </p>
-    <h2>Logo do HTML</h2>
-    <img src="imagem.extenção" alt="Imagem da logo do HTML">
-    
+    <h3>Logo do HTML</h3>
+    <!--imagem-->
+    <img src="img/html5.png" alt="Imagem da logo do HTML" width="200 px" height="200 px">
+    <p>Exemplo de código <strong>JavaScript</strong></p>
+    <pre>
+    <code>
+const myHeading = document.querySelector("h1");
+for (i = 0; i <= 10; i++) {
+    myHeading.innerHTML = "Olá mundo! ";
+}
+    </code>
+    </pre>
+    <p>O código abaixo usa as tags <strong><code>sub</code></strong>, <strong><code>small</code></strong> e
+        <strong><code>sup</code></strong>:
+    </p>
+    <p>
+        1<sup>2</sup><sub><small>3</small></sub>
+        4<sup>5</sup><sub><small>6</small></sub>
+        7<sup>8</sup><sub><small>9</small></sub>
+    </p>
+
 </body>
 
 </html>
