@@ -3,38 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Exercícico IV WACAD001-HTML</title>
-    <style></style>
+    <title>Instituto de Computação</title>
 </head>
 
 <body>
-    <!--Exercício IV curso Web Academic - introduaçao a html-->
-    <h1>Hitória do HTML</h1>
-    <p><strong>Tim Berners-Lee</strong> (físico britânico) criou o HTML original(e outros protocolos associados como o
-        HTML), numa <strong>estação de trabalho</strong>, usando o ambiente de desenvolvimento NeXTSTEP do CERN. A sua
-        soluçao, combina com a entao emergente internet pública (que torna-se-ia a Internet), ganhou atenção mundial
-    </p>
-    <h3>Logo do HTML</h3>
-    <!--imagem-->
-    <img src="/img/html5.png" alt="Imagem da logo do HTML" width="200 px" height="200 px">
-    <p>Exemplo de código <strong>JavaScript</strong></p>
-    <pre>
-    <code>
-const myHeading = document.querySelector("h1");
-for (i = 0; i <= 10; i++) {
-    myHeading.innerHTML = "Olá mundo! ";
-}
-    </code>
-    </pre>
-    <p>O código abaixo usa as tags <strong><code>sub</code></strong>, <strong><code>small</code></strong> e
-        <strong><code>sup</code></strong>:
-    </p>
-    <p>
-        <sub>1</sub><sup>2</sup><sub>3</sub>
-        <sub>4</sub><sup>5</sup><sub><small>6</small></sub>
-        <sub>7</sub><sup>8</sup><sub><small>9</small></sub>
-    </p>
+    <!--Exercício III curso Web Academic - introduaçao a html-->
+    <h1>Formulário de Contato</h1>
 
+    <p>
+        Por favor, preencha o formulário abaixo e clique no botão Enviar Mensagem.
+        Agradecemos por seu contato.
+    </p>
+    <!--Formulário-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Básicos</legend>
+            <label>Nome<br>
+                <input type="text" name="nome">
+            </label><br><br>
+
+            <label>E-mail<br>
+                <input type="email" name="email" placeholder="seunome@dominio.com.br">
+            </label><br><br>
+
+            <label>Website<br>
+                <input type="url" name="website" placeholder="http://">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Seu curso no Instituto de Computação</legend>
+            <label><input type="radio" name="curso" value="cc"> Ciência da Computação</label><br>
+            <label><input type="radio" name="curso" value="si"> Sistemas de Informação</label><br>
+            <label><input type="radio" name="curso" value="ec"> Engenharia da Computação</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Assinale as linguagens já usadas por você:</legend>
+            <label><input type="checkbox" name="linguagem" value="java"> Java</label>
+            <label><input type="checkbox" name="linguagem" value="c"> C</label>
+            <label><input type="checkbox" name="linguagem" value="cpp"> C++</label>
+            <label><input type="checkbox" name="linguagem" value="perl"> Perl</label>
+            <label><input type="checkbox" name="linguagem" value="python"> Python</label>
+            <label><input type="checkbox" name="linguagem" value="js"> Javascript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Complementares</legend>
+            <label>Cor Favorita
+                <input type="color" name="cor">
+            </label><br><br>
+
+            <label>Data de Nascimento
+                <input type="date" name="nascimento">
+            </label><br><br>
+
+            <label>Ano de Entrada em seu Curso do IComp
+                <input type="number" name="entrada" value="2000">
+            </label><br><br>
+
+            <label>Nota para este site
+                <input type="range" name="nota" min="0" max="10" value="5">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de atuação</legend>
+            <select name="area">
+                <option>Banco de Dados</option>
+                <option>Desenvolvimento Web</option>
+                <option>Redes de Computadores</option>
+                <option>Segurança da Informação</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submeta seu currículo vitae</legend>
+            <input type="file" name="curriculo">
+        </fieldset>
+
+        <fieldset>
+            <legend>Digite sua Mensagem</legend>
+            <textarea name="mensagem" rows="5" cols="40">Este é o valor padrão!</textarea>
+        </fieldset>
+
+        <br>
+        <input type="reset" value="Resetar Dados">
+        <input type="submit" value="Enviar Mensagem">
+    </form>
 </body>
 
 </html>
